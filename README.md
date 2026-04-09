@@ -5,7 +5,7 @@
 
 ## Dataset
 [![Dataset on HF](https://huggingface.co/datasets/huggingface/badges/resolve/main/dataset-on-hf-md-dark.svg)](https://huggingface.co/datasets/ANDRYHA/CrowdSAL)
-![Google Drive](https://img.shields.io/badge/Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)
+[![Google Drive](https://img.shields.io/badge/Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/1daH-14w_vHLc9OuGQ_RU0HgUv_Wc3G0o?usp=sharing)
 
 
 **CrowdSAL** is the largest video saliency dataset with the following key features:
