@@ -34,12 +34,12 @@
 
 ### Environment Setup
 
-```
+```bash
 conda create -n saliency python=3.10.19
 conda activate saliency
-pip install numpy==2.2.6 opencv-python-headless==4.12.0.88 tqdm==4.67.1
-conda install ffmpeg=4.4.2 -c conda-forge
+python -m pip install -r requirements.txt
 ```
+
 ### Run Evaluation
 Usage example:
 
@@ -47,11 +47,11 @@ Usage example:
 2) Install all dependencies from Environment Setup;
 3) Download and extract all CrowdSAL files from the dataset page;
 4) Run `python bench.py` with flags:
-* `--model_video_predictions` — folder with predicted saliency videos
-* `--model_extracted_frames` — folder to store prediction frames (should not exist at launch time)
-* `--gt_video_predictions` — folder from dataset page with gt saliency videos
-* `--gt_extracted_frames` — folder to store ground-truth frames (should not exist at launch time)
+* `--model_predictions_path` — folder with predicted saliency videos
+* `--gt_saliency_path` — folder from dataset page with gt saliency videos
 * `--gt_fixations_path` — folder from dataset page with gt saliency fixations
-* `--mode` — Train/Test subsets split
-* `--results_json` — path to the output results json
-5) The result you get will be available following `results_json` path.
+* `--results_path` — folder for the output result json files
+* `--num_workers` — number of videos to evaluate concurrently
+* `--decoder_threads` — number of decoder threads used for each video stream
+* `--overwrite` — recalculate videos whose result json files already exist
+5) The result you get will be available following `results_path` path.
