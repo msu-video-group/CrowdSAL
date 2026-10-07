@@ -1,0 +1,5 @@
+av==17.1.0
+colorama==0.4.6
+numpy==2.2.6
+packaging==26.3
+tqdm==4.70.1
